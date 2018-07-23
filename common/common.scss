@@ -1,0 +1,91 @@
+@mixin box-shadow($value: 8px) {
+  box-shadow: 0 1px $value rgba(black ,0.18);
+}
+
+$light-gray: #e9e9e9;
+$tertiary-light: lighten($tertiary, 25%);
+
+.btn,
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+  border: 1px solid $tertiary-light;
+  color: $tertiary;
+  background: transparent;
+  &:hover {
+    background: $tertiary-light;
+    color: $tertiary;
+    .d-icon {
+      color: $tertiary;
+    }
+  }
+}
+
+body {
+  background-color: $light-gray;
+  background-image: url($background);
+  /* Background pattern from Toptal Subtle Patterns */
+  /* ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/ */
+  background-position: fixed;
+  background-size: auto;
+}
+#main-outlet {
+  background: #fff;
+  border-radius: 8px;
+  width: 75%;
+  max-width: 930px;
+  padding: 4% 5% 5%;
+  padding-bottom: 5% !important; //overriding inline style
+  margin: 120px auto;
+  @include box-shadow;
+}
+header.d-header {
+  position: fixed;
+  @include box-shadow;
+  .contents {
+    display: flex;
+    align-items: center;
+  }
+  .panel {
+    margin-left: auto;
+    order: 5;
+  }
+}
+
+ol.category-breadcrumb {
+  border-right: 1px solid $light-gray;
+  padding-right: 10px;
+
+.badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {
+  width: 12px;
+  height: 12px;
+}
+}
+
+.list-controls .combo-box .combo-box-header {
+  background: transparent;
+  font-size: 1.1487em;
+}
+
+.select-kit.combo-box.category-drop .category-drop-header {
+  padding: 4px 0 5px 10px;
+  align-items: baseline;
+
+}
+
+
+#list-area {
+  margin-bottom: 0;
+}
+#topic-title {
+  padding-top: 0;
+}
+
+.topic-list {
+  margin-top: 1.42em;
+}
+
+#bulk-select {
+  background: transparent;
+  button {
+    @include box-shadow(2px);
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "graceful",
+  "about_url": "URL",
+  "license_url": "URL",
+  "assets": {
+    "background": "assets/sayagata-400px.png"
+  },
+  "color_schemes": {
+  }
+}
