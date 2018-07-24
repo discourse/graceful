@@ -55,6 +55,14 @@ tbody {
   }
 }
 
+.btn-danger {
+  background: $danger;
+  &:hover {
+    background: darken($danger, 10%);
+    color: $secondary;
+  }
+}
+
 .btn-primary {
   background: $tertiary;
   color: $secondary;
