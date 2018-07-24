@@ -1,26 +1,78 @@
+@import "common/foundation/variables";
+
 @mixin box-shadow($value: 8px) {
-  box-shadow: 0 1px $value rgba(black ,0.18);
+  box-shadow: 0 1px $value rgba(black, 0.18);
 }
 
 $light-gray: #e9e9e9;
-$tertiary-light: lighten($tertiary, 25%);
 
 .btn,
 .select-kit.dropdown-select-box .dropdown-select-box-header {
-  border: 1px solid $tertiary-light;
-  color: $tertiary;
+  border: 1px solid $primary-low;
+  color: $primary-high;
   background: transparent;
+  border-radius: 4px;
+
   &:hover {
-    background: $tertiary-light;
+    background: $tertiary-low;
     color: $tertiary;
+  }
+}
+
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+  &:hover {
     .d-icon {
       color: $tertiary;
     }
   }
 }
 
+.select-kit.dropdown-select-box.composer-actions .select-kit-header .d-icon {
+  border: none;
+}
+
+#reply-control {
+  border-radius: 10px 10px 0 0;
+  .select-kit.dropdown-select-box .dropdown-select-box-header {
+    .d-icon {
+      color: $tertiary;
+    }
+    &:hover {
+      background: $tertiary-low;
+    }
+  }
+  .d-editor-button-bar {
+    .select-kit.dropdown-select-box .dropdown-select-box-header {
+      border: none;
+    }
+  }
+}
+
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row {
+  background: $tertiary-low;
+  &:hover,
+  &.is-highlighted {
+    background: $tertiary;
+  }
+}
+
+.d-editor-button-bar .btn {
+  border: none;
+  color: $tertiary;
+}
+
+.btn-primary {
+  background: $tertiary;
+  color: $secondary;
+  border-color: $tertiary;
+}
+
+tbody {
+  border-width: 1px;
+}
+
 body {
-  background-color: $light-gray;
+  background-color: $primary-low;
   background-image: url($background);
   /* Background pattern from Toptal Subtle Patterns */
   /* ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/ */
@@ -36,6 +88,12 @@ body {
   padding-bottom: 5% !important; //overriding inline style
   margin: 120px auto;
   @include box-shadow;
+  @media screen and (max-width: 1120px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 1075px) {
+    width: 85%;
+  }
 }
 header.d-header {
   position: fixed;
@@ -50,14 +108,11 @@ header.d-header {
   }
 }
 
-ol.category-breadcrumb {
-  border-right: 1px solid $light-gray;
-  padding-right: 10px;
-
-.badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {
-  width: 12px;
-  height: 12px;
-}
+.d-header-icons .icon:hover {
+  background: $tertiary-low;
+  .d-icon {
+    color: $tertiary;
+  }
 }
 
 .list-controls .combo-box .combo-box-header {
@@ -68,9 +123,7 @@ ol.category-breadcrumb {
 .select-kit.combo-box.category-drop .category-drop-header {
   padding: 4px 0 5px 10px;
   align-items: baseline;
-
 }
-
 
 #list-area {
   margin-bottom: 0;
@@ -82,10 +135,114 @@ ol.category-breadcrumb {
 .topic-list {
   margin-top: 1.42em;
 }
+#topic-progress-wrapper {
+  right: 3em !important;
+}
+
+#topic-progress-wrapper .topic-admin-menu-button-container .toggle-admin-menu {
+  background: $secondary;
+  border-radius: 4px 0 0 4px;
+}
 
 #bulk-select {
   background: transparent;
   button {
+    background: $secondary;
     @include box-shadow(2px);
+    &:hover {
+      background: $tertiary-low;
+    }
   }
+}
+
+.user-preferences .bio-composer .d-editor-preview,
+.group-form-bio .d-editor-preview,
+.edit-category-tab-topic-template .d-editor-preview {
+  background: $tertiary-low;
+}
+
+.badge-group {
+  background: $tertiary-low;
+}
+
+.input-prepend.input-append input,
+.input-prepend.input-append select {
+  background: $tertiary-low;
+}
+
+.modal .modal-body {
+  label .d-icon {
+    color: $tertiary;
+  }
+}
+
+// admin
+
+.admin-controls {
+  background: $tertiary-low;
+  .controls {
+    background: $tertiary-low;
+  }
+  nav {
+    background: $tertiary-low;
+    &:before {
+      background: linear-gradient(
+        to right,
+        $tertiary-low 0%,
+        rgba(234, 236, 238, 0) 100%
+      );
+    }
+    &:after {
+      background: linear-gradient(
+        to right,
+        rgba(234, 236, 238, 0) 0%,
+        $tertiary-low 100%
+      );
+    }
+  }
+}
+
+.nav-stacked {
+  background: $tertiary-low;
+  li {
+    border-color: $tertiary-medium;
+  }
+}
+
+.admin-detail {
+  border-color: $tertiary-medium;
+}
+
+.content-list ul li a:hover {
+  background: $tertiary-low;
+}
+
+.open .grippie {
+  background: transparent;
+  &:before {
+    border-color: $tertiary;
+  }
+}
+
+.user-main .staff-counters {
+  background: $tertiary-low;
+  color: $tertiary;
+  a {
+    color: $tertiary;
+  }
+  span {
+    color: $secondary;
+  }
+}
+.user-main .helpful-flags {
+  background-color: #2ecc40;
+}
+.user-main .flagged-posts {
+  background-color: #f012be;
+}
+.user-main .deleted-posts {
+  background-color: #ff851b;
+}
+.user-main .warnings-received {
+  background-color: #ff4136;
 }
