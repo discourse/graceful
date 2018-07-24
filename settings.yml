@@ -1,0 +1,6 @@
+background_image: 
+  type: string
+  default: default
+  description: Enter image url or variable from "Uploads" section above
+
+tile_background: true

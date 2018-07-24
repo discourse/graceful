@@ -4,7 +4,43 @@
   box-shadow: 0 1px $value rgba(black, 0.18);
 }
 
-$light-gray: #e9e9e9;
+body {
+  background-color: $primary-very-low;
+  @if $background-image != "default"  {
+    background-image: url($background-image);
+ } @else {
+    background-image: url($default-background);
+  }
+   /* Default background pattern from Toptal Subtle Patterns */
+  /* ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/ */
+  background-attachment: fixed;
+  @if $tile-background == "true" {
+    background-size: auto;
+  } @else {
+    background-size: cover;
+  }
+}
+
+tbody {
+  border-width: 1px;
+}
+
+#main-outlet {
+  background: rgba($secondary, .95);
+  border-radius: 8px;
+  width: 75%;
+  max-width: 930px;
+  padding: 4% 5% 5%;
+  padding-bottom: 5% !important; //overriding inline style
+  margin: 120px auto;
+  @include box-shadow;
+  @media screen and (max-width: 1120px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 1075px) {
+    width: 85%;
+  }
+}
 
 .btn,
 .select-kit.dropdown-select-box .dropdown-select-box-header {
@@ -19,16 +55,10 @@ $light-gray: #e9e9e9;
   }
 }
 
-.select-kit.dropdown-select-box .dropdown-select-box-header {
-  &:hover {
-    .d-icon {
-      color: $tertiary;
-    }
-  }
-}
-
-.select-kit.dropdown-select-box.composer-actions .select-kit-header .d-icon {
-  border: none;
+.btn-primary {
+  background: $tertiary;
+  color: $secondary;
+  border-color: $tertiary;
 }
 
 #reply-control {
@@ -48,11 +78,10 @@ $light-gray: #e9e9e9;
   }
 }
 
-.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row {
-  background: $tertiary-low;
-  &:hover,
-  &.is-highlighted {
-    background: $tertiary;
+.open .grippie {
+  background: transparent;
+  &:before {
+    border-color: $primary-low;
   }
 }
 
@@ -61,40 +90,6 @@ $light-gray: #e9e9e9;
   color: $tertiary;
 }
 
-.btn-primary {
-  background: $tertiary;
-  color: $secondary;
-  border-color: $tertiary;
-}
-
-tbody {
-  border-width: 1px;
-}
-
-body {
-  background-color: $primary-low;
-  background-image: url($background);
-  /* Background pattern from Toptal Subtle Patterns */
-  /* ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/ */
-  background-position: fixed;
-  background-size: auto;
-}
-#main-outlet {
-  background: #fff;
-  border-radius: 8px;
-  width: 75%;
-  max-width: 930px;
-  padding: 4% 5% 5%;
-  padding-bottom: 5% !important; //overriding inline style
-  margin: 120px auto;
-  @include box-shadow;
-  @media screen and (max-width: 1120px) {
-    width: 80%;
-  }
-  @media screen and (max-width: 1075px) {
-    width: 85%;
-  }
-}
 header.d-header {
   position: fixed;
   @include box-shadow;
@@ -115,28 +110,47 @@ header.d-header {
   }
 }
 
+.badge-wrapper.box {
+  padding: 2px 6px 2px 5px;
+  span {
+    border-radius: 4px;
+  }
+}
+
+// Main category nav
+
 .list-controls .combo-box .combo-box-header {
   background: transparent;
   font-size: 1.1487em;
 }
 
-.select-kit.combo-box.category-drop .category-drop-header {
+.select-kit.combo-box.category-drop .category-drop-header,
+.select-kit.combo-box.tag-drop .tag-drop-header {
   padding: 4px 0 5px 10px;
   align-items: baseline;
+  border-radius: 4px;
 }
 
 #list-area {
   margin-bottom: 0;
 }
+
 #topic-title {
   padding-top: 0;
 }
 
-.topic-list {
-  margin-top: 1.42em;
+.topic-map .btn {
+  border-radius: 0;
 }
+
+.badge-card {
+  border-radius: 4px;
+}
+
+// Horizontal topic timeline
+
 #topic-progress-wrapper {
-  right: 3em !important;
+  right: 10vw !important;
 }
 
 #topic-progress-wrapper .topic-admin-menu-button-container .toggle-admin-menu {
@@ -155,6 +169,8 @@ header.d-header {
   }
 }
 
+// User pages
+
 .user-preferences .bio-composer .d-editor-preview,
 .group-form-bio .d-editor-preview,
 .edit-category-tab-topic-template .d-editor-preview {
@@ -165,6 +181,7 @@ header.d-header {
   background: $tertiary-low;
 }
 
+
 .input-prepend.input-append input,
 .input-prepend.input-append select {
   background: $tertiary-low;
@@ -173,6 +190,31 @@ header.d-header {
 .modal .modal-body {
   label .d-icon {
     color: $tertiary;
+  }
+}
+
+.user-main { 
+  .staff-counters {
+    background: $tertiary-low;
+    color: $tertiary;
+    a {
+      color: $tertiary;
+    }
+    span {
+      color: $secondary;
+    }
+  }
+  .helpful-flags {
+    background-color: #2ecc40;
+  }
+  .flagged-posts {
+    background-color: #f012be;
+  }
+  .deleted-posts {
+    background-color: #ff851b;
+  }
+  .warnings-received {
+    background-color: #ff4136;
   }
 }
 
@@ -217,32 +259,39 @@ header.d-header {
   background: $tertiary-low;
 }
 
-.open .grippie {
-  background: transparent;
-  &:before {
-    border-color: $tertiary;
+span.user-title {
+  border: 1px solid #f1be18;
+  color: #f1be18 !important;
+  padding: 0 4px;
+  line-height: 1.2em;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+}
+
+.uploaded-image-preview {
+  background: $tertiary-low;
+  border-radius: 4px;
+}
+
+// Select kit 
+
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+  &:hover {
+    .d-icon {
+      color: $tertiary;
+    }
   }
 }
 
-.user-main .staff-counters {
+.select-kit.dropdown-select-box.composer-actions .select-kit-header .d-icon {
+  border: none;
+}
+
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row {
   background: $tertiary-low;
-  color: $tertiary;
-  a {
-    color: $tertiary;
+  &:hover,
+  &.is-highlighted {
+    background: $tertiary;
   }
-  span {
-    color: $secondary;
-  }
-}
-.user-main .helpful-flags {
-  background-color: #2ecc40;
-}
-.user-main .flagged-posts {
-  background-color: #f012be;
-}
-.user-main .deleted-posts {
-  background-color: #ff851b;
-}
-.user-main .warnings-received {
-  background-color: #ff4136;
 }
