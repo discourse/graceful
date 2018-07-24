@@ -117,6 +117,10 @@ header.d-header {
   }
 }
 
+.deleted .topic-body {
+  background-color: rgba($danger,0.2);
+}
+
 // Main category nav
 
 .list-controls .combo-box .combo-box-header {
@@ -180,7 +184,6 @@ header.d-header {
 .badge-group {
   background: $tertiary-low;
 }
-
 
 .input-prepend.input-append input,
 .input-prepend.input-append select {

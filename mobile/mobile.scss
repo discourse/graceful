@@ -16,8 +16,7 @@
     margin: 8px 5px 0;
   }
   #site-logo {
-    max-height: 22px;
-    margin: 12px 2px 9px;
+    max-height: 25px;
   }
   .d-header-icons .d-icon {
     font-size: 1.5em;
@@ -75,8 +74,11 @@ span.user-title {
 .topic-list {
   .badge-notification,
   .category-topic-link td.num .badge-notification {
-    padding: 2px 10px;
+    padding: 2px 6px;
     font-size: 1em;
+  }
+  a.badge.badge-notification.unread {
+    display: none;
   }
   .num a.badge-posts {
     color: $primary-low-mid;
@@ -102,6 +104,10 @@ span.user-title {
 }
 .category-list-item {
   border-left: none;
+  border-top: 2px solid;
+  .category-name {
+    font-weight: normal;
+  }
 }
 
 .topic-item-stats {

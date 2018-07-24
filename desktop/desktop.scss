@@ -55,9 +55,12 @@ img.avatar {
     right: 85px;
   }
   #site-logo {
-    max-height: 30px !important;
-    margin-top: 10px !important;
+    max-height: 35px !important;
   }
+}
+
+.title-wrapper {
+  width: auto;
 }
 
 .extra-info-wrapper {
@@ -70,6 +73,7 @@ img.avatar {
 
 .list-controls {
   font-size: 1.1em;
+  margin-bottom: 2em;
 }
 
 ol.category-breadcrumb {
