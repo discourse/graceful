@@ -1,3 +1,5 @@
+// Big thanks to jsthon for the initial work on this https://meta.discourse.org/u/jsthon/
+
 @import "common/foundation/variables";
 
 @mixin box-shadow($value: 8px) {
@@ -11,8 +13,8 @@ body {
  } @else {
     background-image: url($default-background);
   }
-   /* Default background pattern from Toptal Subtle Patterns */
-  /* ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/ */
+  // Default background pattern from Toptal Subtle Patterns 
+  // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/ 
   background-attachment: fixed;
   @if $tile-background == "true" {
     background-size: auto;
