@@ -308,3 +308,21 @@ span.user-title {
     background: $tertiary;
   }
 }
+
+// Plugins 
+
+// Babble 
+
+.babble-sidebar {
+  height: calc(100% - 5.285em);
+}
+.babble-sidebar-collapsed {
+  border: none;
+  background: transparent;
+  button.widget-button {
+    background: $secondary;
+  }
+  .d-icon {
+    color: $primary;
+  }
+}
