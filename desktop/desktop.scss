@@ -27,7 +27,7 @@ img.avatar {
 
 .d-header {
   height: 70px;
-  background: rgba($secondary, 0.92);
+  background: rgba($header_background, 0.92);
   box-shadow: 0 3px 3px rgba(100, 100, 100, 0.13);
   .panel {
     padding: 6px 0 0 0;
@@ -137,9 +137,6 @@ nav.post-controls {
 #user-card {
   background: rgba($secondary, 0.95);
   border-radius: 4px;
-  .card-content {
-    background: none;
-  }
 }
 
 .user-main .about .details .primary {

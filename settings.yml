@@ -4,3 +4,7 @@ background_image:
   description: Enter image url or variable from "Uploads" section above
 
 tile_background: true
+
+no_background_image: 
+  default: false
+  description: Enabling this disables the background image and tiling settings above.
