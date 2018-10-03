@@ -31,6 +31,7 @@ img.avatar {
   box-shadow: 0 3px 3px rgba(100, 100, 100, 0.13);
   .panel {
     padding: 6px 0 0 0;
+    flex: 0 0 auto;
   }
   button {
     &.login-button,
@@ -39,7 +40,9 @@ img.avatar {
     }
   }
   .icons .icon {
-    margin-left: 20px;
+    @media screen and (min-width: 875px) {
+      margin-left: 20px;
+    }
     border-radius: 4px;
   }
   .icons {
@@ -61,10 +64,6 @@ img.avatar {
 
 .title-wrapper {
   width: auto;
-}
-
-.extra-info-wrapper {
-  padding-left: 15px;
 }
 
 .extra-info-wrapper .topic-link {
