@@ -1,8 +1,11 @@
 @import "common/foundation/variables";
 
+#main {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
 #main-outlet {
-  margin-top: 80px;
-  margin-bottom: 20px;
   padding: 15px;
   width: 80%;
 }
