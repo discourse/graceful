@@ -40,7 +40,10 @@ tbody {
   border-radius: 8px;
   width: 75%;
   max-width: 930px;
-  padding: 4% 5% 5%;
+  padding: 3em 3em 5%;
+  @media screen and (max-width: 775px) {
+    padding: 1.5em;
+  }
   padding-bottom: 5% !important; //overriding inline style
   @include box-shadow;
   @media screen and (max-width: 1120px) {
@@ -143,13 +146,14 @@ header.d-header {
 
 .list-controls .combo-box .combo-box-header {
   background: transparent;
+  @media screen and (min-width: 775px) {
   font-size: 1.1487em;
+}
   border-color: transparent;
 }
 
 .select-kit.combo-box.category-drop .category-drop-header,
 .select-kit.combo-box.tag-drop .tag-drop-header {
-  align-items: baseline;
   border-radius: 4px;
 }
 
