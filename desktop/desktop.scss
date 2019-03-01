@@ -1,13 +1,5 @@
 @import "common/foundation/variables";
 
-::selection {
-  background: $tertiary-low;
-}
-
-::-moz-selection {
-  background: $tertiary-low;
-}
-
 h3 {
   font-weight: normal;
 }
@@ -117,7 +109,8 @@ nav.post-controls {
   .num a.badge-posts {
     font-weight: normal;
   }
-  .sortable:hover { // sortable column headers
+  .sortable:hover {
+    // sortable column headers
     border-radius: 4px 4px 0 0;
     background: $tertiary-low;
     color: $tertiary;
