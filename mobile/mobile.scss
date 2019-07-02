@@ -16,7 +16,7 @@
   }
   .login-button,
   .d-header button.sign-up-button {
-    margin: 8px 5px 0;
+    margin: 0 5px 0;
   }
   #site-logo {
     max-height: 25px;
@@ -26,7 +26,7 @@
   }
 }
 
-.topic-list-main-link, 
+.topic-list-main-link,
 .topic-list .main-link {
   line-height: 1.2;
 }
@@ -48,7 +48,7 @@ img.avatar {
 
 .list-controls {
   margin: auto;
-  .nav-pills>li {
+  .nav-pills > li {
     background: transparent;
     border: 1px solid $primary-low;
     border-radius: 4px;
@@ -97,7 +97,7 @@ img.avatar {
   }
   img.avatar {
     margin-top: 4px;
-  } 
+  }
   > tbody > tr:first-of-type {
     border-top: 3px solid transparent;
   }
@@ -132,7 +132,7 @@ img.avatar {
 }
 
 .select-kit.dropdown-select-box.period-chooser .period-chooser-header {
-  font-size: .745em;
+  font-size: 0.745em;
 }
 
 .list-controls .combo-box .combo-box-header {
@@ -141,7 +141,7 @@ img.avatar {
 
 .tag-show-heading {
   order: -1;
-  margin-right: auto; 
+  margin-right: auto;
   display: flex;
   align-items: center;
   .d-icon {
@@ -160,18 +160,17 @@ img.avatar {
   border-radius: 4px;
   .d-icon-caret-down,
   .d-icon-caret-up {
-    margin-right: 10px !important; 
+    margin-right: 10px !important;
   }
 }
 
-.mobile-view .mobile-nav.messages-nav, 
-.mobile-view .mobile-nav.notifications-nav, 
-.mobile-view .mobile-nav.activity-nav, 
+.mobile-view .mobile-nav.messages-nav,
+.mobile-view .mobile-nav.notifications-nav,
+.mobile-view .mobile-nav.activity-nav,
 .mobile-view .mobile-nav.preferences-nav {
   position: relative;
   top: 0;
   margin-bottom: 10px;
-  
 }
 
 .search-container .search-advanced-sidebar .search-advanced-title.btn {

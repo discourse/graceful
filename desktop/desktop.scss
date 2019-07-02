@@ -91,11 +91,22 @@ ol.category-breadcrumb {
 
 nav.post-controls {
   button,
-  .like-button {
+  .double-button {
     border-radius: 4px;
+    button.toggle-like.like {
+      border-radius: 4px !important;
+    }
     &:hover {
-      background: $tertiary-low;
-      color: $tertiary;
+      button {
+        &:first-of-type {
+          border-radius: 4px 0 0 4px;
+        }
+        &:last-of-type {
+          border-radius: 0 4px 4px 0;
+        }
+        background: $tertiary-low;
+        color: $tertiary;
+      }
     }
   }
   button:focus,
@@ -147,7 +158,6 @@ nav.post-controls {
 
 .modal-inner-container {
   border-radius: 4px;
-  max-width: 450px;
 }
 
 .modal-header {

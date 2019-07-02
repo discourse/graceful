@@ -8,8 +8,9 @@
 
 body {
   background-color: $primary-very-low;
-  @if $no-background-image == "false" {  
-    @if $background-image != "default"  { // Thanks @tmoko!
+  @if $no-background-image == "false" {
+    @if $background-image != "default" {
+      // Thanks @tmoko!
       background-image: url($background-image);
     } @else {
       background-image: url($default-background);
@@ -22,7 +23,7 @@ body {
     } @else {
       background-size: cover;
       background-repeat: no-repeat;
-    } 
+    }
   }
 }
 
@@ -36,7 +37,7 @@ tbody {
 }
 
 #main-outlet {
-  background: rgba($secondary, .95);
+  background: rgba($secondary, 0.95);
   border-radius: 8px;
   width: 75%;
   max-width: 930px;
@@ -60,7 +61,7 @@ tbody {
   color: $primary-high;
   background: transparent;
   border-radius: 4px;
-  
+
   &:hover {
     background: $tertiary-low;
     color: $tertiary;
@@ -109,6 +110,15 @@ tbody {
 .d-editor-button-bar .btn {
   border: none;
   color: $tertiary;
+  .d-icon {
+    color: $tertiary;
+  }
+  &:hover {
+    background: $tertiary-low;
+    .d-icon {
+      color: $tertiary;
+    }
+  }
 }
 
 header.d-header {
@@ -139,7 +149,7 @@ header.d-header {
 }
 
 .deleted .topic-body {
-  background-color: rgba($danger,0.2);
+  background-color: rgba($danger, 0.2);
 }
 
 // Main category nav
@@ -147,8 +157,8 @@ header.d-header {
 .list-controls .combo-box .combo-box-header {
   background: transparent;
   @media screen and (min-width: 775px) {
-  font-size: 1.1487em;
-}
+    font-size: 1.1487em;
+  }
   border-color: transparent;
 }
 
@@ -218,7 +228,7 @@ header.d-header {
   }
 }
 
-.user-main { 
+.user-main {
   .staff-counters {
     background: $tertiary-low;
     color: $tertiary;
@@ -254,16 +264,16 @@ header.d-header {
     background: $tertiary-low;
     &:before {
       background: linear-gradient(
-      to right,
-      $tertiary-low 0%,
-      rgba(234, 236, 238, 0) 100%
+        to right,
+        $tertiary-low 0%,
+        rgba(234, 236, 238, 0) 100%
       );
     }
     &:after {
       background: linear-gradient(
-      to right,
-      rgba(234, 236, 238, 0) 0%,
-      $tertiary-low 100%
+        to right,
+        rgba(234, 236, 238, 0) 0%,
+        $tertiary-low 100%
       );
     }
   }
@@ -299,7 +309,7 @@ span.user-title {
   border-radius: 4px;
 }
 
-// Select kit 
+// Select kit
 
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   &:hover {
@@ -321,9 +331,9 @@ span.user-title {
   }
 }
 
-// Plugins 
+// Plugins
 
-// Babble 
+// Babble
 
 .babble-sidebar {
   height: calc(100% - 5.285em);
