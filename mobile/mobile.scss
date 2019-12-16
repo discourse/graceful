@@ -177,3 +177,7 @@ img.avatar {
   background: $tertiary-low;
   border-color: $tertiary-low;
 }
+
+div.cooked img:not(.thumbnail) {
+  max-width: 100%;
+}
