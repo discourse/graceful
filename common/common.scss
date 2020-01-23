@@ -12,6 +12,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
+  z-index: -1;
   background-color: $primary-very-low;
   @if $no-background-image == "false" {
     @if $background-image != "default" {
@@ -355,4 +356,10 @@ span.user-title {
   .d-icon {
     color: $primary;
   }
+}
+
+// No-js view
+
+noscript > #main-outlet {
+  padding-top: 6em;
 }
