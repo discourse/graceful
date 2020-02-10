@@ -1,10 +1,10 @@
-background_image: 
+background_image:
   type: string
   default: default
-  description: Enter image url or variable from "Uploads" section above
+  description: Enter image url
 
 tile_background: true
 
-no_background_image: 
+no_background_image:
   default: false
-  description: Enabling this disables the background image and tiling settings above.
+  description: Disable the background image and tiling settings above.
