@@ -92,6 +92,10 @@ tbody {
   border-color: $tertiary;
 }
 
+.modal-close {
+  border: none;
+}
+
 #reply-control {
   border-radius: 10px 10px 0 0;
   .select-kit.dropdown-select-box .dropdown-select-box-header {
