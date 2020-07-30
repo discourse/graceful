@@ -69,13 +69,21 @@ ol.category-breadcrumb {
 .names .username {
   font-size: 1.1em;
 }
+
+.admin-controls .nav-pills>li a.active {
+  color: $secondary;
+}
+
 .nav-pills > li > a {
   border-radius: 4px;
+  padding: 0.5em 0.7em;
+  border: 1px solid transparent;
 }
 .nav-pills > li.active > a,
 .nav-pills > li > a.active {
   color: $tertiary;
-  background: transparent !important;
+  background-color: $tertiary-low;
+  border-color: $tertiary;
 }
 
 nav.post-controls {
