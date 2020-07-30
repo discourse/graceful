@@ -1,23 +1,6 @@
 @import "common/foundation/variables";
 
-body {
-  background: transparent;
-}
-
-#main {
-  padding-top: 80px;
-  padding-bottom: 20px;
-}
-
-#main-outlet {
-  padding: 15px;
-  width: 80%;
-}
-
 .d-header {
-  .contents {
-    margin: 2px 0;
-  }
   .login-button,
   .d-header button.sign-up-button {
     margin: 0 5px 0;
@@ -33,10 +16,6 @@ body {
 .topic-list-main-link,
 .topic-list .main-link {
   line-height: 1.2;
-}
-
-img.avatar {
-  border-radius: 4px;
 }
 
 .image-upload-controls {

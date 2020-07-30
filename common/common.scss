@@ -18,45 +18,8 @@ html {
   font-family: "Avenir Medium", sans-serif;
 }
 
-.background-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
-  background-color: $primary-very-low;
-}
-
 tbody {
   border-width: 1px;
-}
-
-#main {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-#main-outlet {
-  background: rgba($secondary, 0.95);
-  border-radius: 8px;
-  width: 75%;
-  max-width: 930px;
-  padding: 3em 3em 5%;
-  .archetype-regular & {
-    min-height: 500px;
-  }
-  @media screen and (max-width: 775px) {
-    padding: 1.5em;
-  }
-  padding-bottom: 5% !important; //overriding inline style
-  @include box-shadow;
-  @media screen and (max-width: 1120px) {
-    width: 80%;
-  }
-  @media screen and (max-width: 1075px) {
-    width: 85%;
-  }
 }
 
 .btn,
@@ -131,23 +94,21 @@ tbody {
   }
 }
 
-header.d-header {
-  position: fixed;
-  @include box-shadow;
-  .contents {
-    display: flex;
-    align-items: center;
-  }
-  .panel {
-    margin-left: auto;
-    order: 5;
-  }
-}
+.d-header-icons {
+  .icon {
+    border-radius: 4px;
 
-.d-header-icons .icon:hover {
-  background: $tertiary-low;
-  .d-icon {
-    color: $tertiary;
+    &:hover,
+    &:focus,
+    &:active {
+      background: $tertiary-low;
+      .d-icon {
+        color: $tertiary;
+      }
+    }
+  }
+  .svg-icon {
+    color: $secondary;
   }
 }
 
