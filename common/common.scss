@@ -1,9 +1,21 @@
-// Big thanks to jsthon for the initial work on this https://meta.discourse.org/u/jsthon/
-
 @import "common/foundation/variables";
 
 @mixin box-shadow($value: 8px) {
   box-shadow: 0 1px $value rgba(black, 0.18);
+}
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url($avenir-medium) format("woff2");
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url($avenir-heavy) format("woff2");
+}
+
+html {
+  font-family: "Avenir Medium", sans-serif;
 }
 
 .background-container {
@@ -14,23 +26,6 @@
   width: 100vw;
   z-index: -1;
   background-color: $primary-very-low;
-  @if $no-background-image == "false" {
-    @if $background-image != "default" {
-      // Thanks @tmoko!
-      background-image: url($background-image);
-    } @else {
-      // Default background pattern from Toptal Subtle Patterns
-      // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/
-      background-image: url($default-background);
-    }
-    @if $tile-background == "true" {
-      background-size: auto;
-    } @else {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
 }
 
 tbody {
