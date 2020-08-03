@@ -4,7 +4,8 @@
   "license_url": "https://meta.discourse.org/t/a-graceful-theme-for-discourse/93040/1",
   "assets": {
     "avenir-heavy": "assets/avenir-heavy.woff2",
-    "avenir-medium": "assets/avenir-medium.woff2"
+    "avenir-medium": "assets/avenir-medium.woff2",
+    "icons-sprite": "assets/communitarian-icons.svg"
   },
   "color_schemes": {
     "Graceful": {
