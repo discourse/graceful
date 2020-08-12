@@ -54,7 +54,7 @@ img.avatar {
   margin: auto;
   .nav-pills > li {
     background: transparent;
-    border: 1px solid var(--primary-low, $primary-low);
+    border: 1px solid $primary-low;
     border-radius: 4px;
   }
 }
@@ -89,7 +89,7 @@ img.avatar {
     display: none;
   }
   .num a.badge-posts {
-    color: var(--primary-low-mid, $primary-low-mid);
+    color: $primary-low-mid;
     font-weight: normal;
   }
   .right {
@@ -128,10 +128,10 @@ img.avatar {
 
 .user-main {
   .about.collapsed-info .details {
-    background: var(--secondary, $secondary);
+    background: $secondary;
   }
   .about .details {
-    background-color: var(--secondary, $secondary);
+    background-color: $secondary;
   }
 }
 
@@ -140,7 +140,7 @@ img.avatar {
 }
 
 .list-controls .combo-box .combo-box-header {
-  border: 1px solid var(--primary-low, $primary-low);
+  border: 1px solid $primary-low;
 }
 
 .tag-show-heading {
@@ -160,7 +160,7 @@ img.avatar {
 .mobile-view .mobile-nav {
   width: 100%;
   background: transparent;
-  border: 1px solid var(--primary-low, $primary-low);
+  border: 1px solid $primary-low;
   border-radius: 4px;
   .d-icon-caret-down,
   .d-icon-caret-up {
@@ -178,8 +178,8 @@ img.avatar {
 }
 
 .search-container .search-advanced-sidebar .search-advanced-title.btn {
-  background: var(--tertiary-low, $tertiary-low);
-  border-color: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
+  border-color: $tertiary-low;
 }
 
 div.cooked img:not(.thumbnail) {

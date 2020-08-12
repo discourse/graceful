@@ -13,7 +13,7 @@
   height: 100vh;
   width: 100vw;
   z-index: -1;
-  background-color: var(--primary-very-low, $primary-very-low);
+  background-color: $primary-very-low;
   @if $no-background-image == "false" {
     @if $background-image != "default" {
       // Thanks @tmoko!
@@ -43,7 +43,7 @@ tbody {
 }
 
 #main-outlet {
-  background: rgba(var(--secondary-rgb, $secondary), 0.95);
+  background: rgba($secondary, 0.95);
   border-radius: 8px;
   width: 75%;
   max-width: 930px;
@@ -66,26 +66,30 @@ tbody {
 
 .btn,
 .select-kit.dropdown-select-box .dropdown-select-box-header {
-  border: 1px solid var(--primary-low, $primary-low);
-  color: var(--primary-high, $primary-high);
+  border: 1px solid $primary-low;
+  color: $primary-high;
   background: transparent;
   border-radius: 4px;
 
   &:hover {
-    background: var(--tertiary-low, $tertiary-low);
-    color: var(--tertiary, $tertiary);
+    background: $tertiary-low;
+    color: $tertiary;
   }
 }
 
 .btn-danger {
-  background: var(--danger, $danger);
-  color: var(--secondary, $secondary);
+  background: $danger;
+  color: $secondary;
+  &:hover {
+    background: darken($danger, 10%);
+    color: $secondary;
+  }
 }
 
 .btn-primary {
-  background: var(--tertiary, $tertiary);
-  color: var(--secondary, $secondary);
-  border-color: var(--tertiary, $tertiary);
+  background: $tertiary;
+  color: $secondary;
+  border-color: $tertiary;
 }
 
 .popup-menu-btn,
@@ -98,10 +102,10 @@ tbody {
   border-radius: 10px 10px 0 0;
   .select-kit.dropdown-select-box .dropdown-select-box-header {
     .d-icon {
-      color: var(--tertiary, $tertiary);
+      color: $tertiary;
     }
     &:hover {
-      background: var(--tertiary-low, $tertiary-low);
+      background: $tertiary-low;
     }
   }
   .d-editor-button-bar {
@@ -114,20 +118,20 @@ tbody {
 .open .grippie {
   background: transparent;
   &:before {
-    border-color: var(--primary-low, $primary-low);
+    border-color: $primary-low;
   }
 }
 
 .d-editor-button-bar .btn {
   border: none;
-  color: var(--tertiary, $tertiary);
+  color: $tertiary;
   .d-icon {
-    color: var(--tertiary, $tertiary);
+    color: $tertiary;
   }
   &:hover {
-    background: var(--tertiary-low, $tertiary-low);
+    background: $tertiary-low;
     .d-icon {
-      color: var(--tertiary, $tertiary);
+      color: $tertiary;
     }
   }
 }
@@ -146,9 +150,9 @@ header.d-header {
 }
 
 .d-header-icons .icon:hover {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
   .d-icon {
-    color: var(--tertiary, $tertiary);
+    color: $tertiary;
   }
 }
 
@@ -160,7 +164,7 @@ header.d-header {
 }
 
 .deleted .topic-body {
-  background-color: rgba(var(--danger-rgb, $danger), 0.2);
+  background-color: rgba($danger, 0.2);
 }
 
 // Main category nav
@@ -201,17 +205,17 @@ header.d-header {
 }
 
 #topic-progress-wrapper .topic-admin-menu-button-container .toggle-admin-menu {
-  background: var(--secondary, $secondary);
+  background: $secondary;
   border-radius: 4px 0 0 4px;
 }
 
 #bulk-select {
   background: transparent;
   button {
-    background: var(--secondary, $secondary);
+    background: $secondary;
     @include box-shadow(2px);
     &:hover {
-      background: var(--tertiary-low, $tertiary-low);
+      background: $tertiary-low;
     }
   }
 }
@@ -221,33 +225,33 @@ header.d-header {
 .user-preferences .bio-composer .d-editor-preview,
 .group-form-bio .d-editor-preview,
 .edit-category-tab-topic-template .d-editor-preview {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
 }
 
 .badge-group {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
 }
 
 .input-prepend.input-append input,
 .input-prepend.input-append select {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
 }
 
 .modal .modal-body {
   label .d-icon {
-    color: var(--tertiary, $tertiary);
+    color: $tertiary;
   }
 }
 
 .user-main {
   .staff-counters {
-    background: var(--tertiary-low, $tertiary-low);
-    color: var(--tertiary, $tertiary);
+    background: $tertiary-low;
+    color: $tertiary;
     a {
-      color: var(--tertiary, $tertiary);
+      color: $tertiary;
     }
     span {
-      color: var(--secondary, $secondary);
+      color: $secondary;
     }
   }
   .helpful-flags {
@@ -267,16 +271,16 @@ header.d-header {
 // admin
 
 .admin-controls {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
   .controls {
-    background: var(--tertiary-low, $tertiary-low);
+    background: $tertiary-low;
   }
   nav {
-    background: var(--tertiary-low, $tertiary-low);
+    background: $tertiary-low;
     &:before {
       background: linear-gradient(
         to right,
-        var(--tertiary-low, $tertiary-low) 0%,
+        $tertiary-low 0%,
         rgba(234, 236, 238, 0) 100%
       );
     }
@@ -284,25 +288,25 @@ header.d-header {
       background: linear-gradient(
         to right,
         rgba(234, 236, 238, 0) 0%,
-        var(--tertiary-low, $tertiary-low) 100%
+        $tertiary-low 100%
       );
     }
   }
 }
 
 .nav-stacked {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
   li {
-    border-color: var(--tertiary-medium, $tertiary-medium);
+    border-color: $tertiary-medium;
   }
 }
 
 .admin-detail {
-  border-color: var(--tertiary-medium, $tertiary-medium);
+  border-color: $tertiary-medium;
 }
 
 .content-list ul li a:hover {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
 }
 
 span.user-title {
@@ -316,7 +320,7 @@ span.user-title {
 }
 
 .uploaded-image-preview {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
   border-radius: 4px;
 }
 
@@ -325,7 +329,7 @@ span.user-title {
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   &:hover {
     .d-icon {
-      color: var(--tertiary, $tertiary);
+      color: $tertiary;
     }
   }
 }
@@ -335,10 +339,10 @@ span.user-title {
 }
 
 .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row {
-  background: var(--tertiary-low, $tertiary-low);
+  background: $tertiary-low;
   &:hover,
   &.is-highlighted {
-    background: var(--tertiary, $tertiary);
+    background: $tertiary;
   }
 }
 
@@ -353,10 +357,10 @@ span.user-title {
   border: none;
   background: transparent;
   button.widget-button {
-    background: var(--secondary, $secondary);
+    background: $secondary;
   }
   .d-icon {
-    color: var(--primary, $primary);
+    color: $primary;
   }
 }
 
