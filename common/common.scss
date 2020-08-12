@@ -70,7 +70,7 @@ tbody {
 .btn,
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   @media (prefers-color-scheme: dark) {
-    border-color: var(--primary-low-mid, $secondary-very-high);
+    border-color: var(--primary-low-mid, $primary-low-mid);
   }
   border: 1px solid var(--primary-low, $primary-low);
   color: var(--primary-high, $primary-high);
@@ -124,7 +124,7 @@ tbody {
   background: transparent;
   &:before {
     @media (prefers-color-scheme: dark) {
-      border-color: var(--primary-low-mid, $secondary-high);
+      border-color: var(--primary-low-mid, $primary-low-mid);
     }
     border-color: var(--primary-low, $primary-low);
   }
