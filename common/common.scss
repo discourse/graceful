@@ -1,7 +1,5 @@
 @import "common/foundation/variables";
 
-$category-boxes-gap: 1em;
-
 @mixin box-shadow($value: 8px) {
   box-shadow: 0 1px $value rgba(black, 0.18);
 }
@@ -133,9 +131,9 @@ tbody {
 .list-controls .combo-box .combo-box-header {
   border-color: #dddddd;
   padding: 0.3em 0.7em;
-  // @media screen and (min-width: 775px) {
-  //   font-size: 1.1487em;
-  // }
+  @media screen and (min-width: 850px) {
+    font-size: 1.1487em;
+  }
 }
 
 .select-kit.combo-box.category-drop .category-drop-header,
