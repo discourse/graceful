@@ -1,4 +1,16 @@
 <script type="text/discourse-plugin" version="0.8">
   api.replaceIcon('search', 'communitarian_search');
   api.replaceIcon('bars', 'communitarian_bars');
+
+  api.onPageChange((url) => {
+    // $signUpButton = $('.d-header .sign-up-button span');
+    // $signUpButton.html('Join the Conversation');
+    
+    $headerCustomLinks = $('.d-header .custom-header-links');
+    if (url === '/categories') {
+      $headerCustomLinks.hide()
+    } else {
+      $headerCustomLinks.show();
+    }
+  });
 </script>

@@ -95,7 +95,9 @@ tbody {
 }
 
 .d-header .custom-header-links {
-  margin-left: 3em;
+  @media screen and (min-width: 500px) {
+    margin-left: 3em;
+  }
 }
 
 .d-header-icons {
