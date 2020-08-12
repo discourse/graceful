@@ -94,9 +94,33 @@ tbody {
   }
 }
 
-.d-header .custom-header-links {
-  @media screen and (min-width: 500px) {
-    margin-left: 3em;
+.d-header {
+  .custom-header-links {
+    @media screen and (min-width: 500px) {
+      margin-left: 3em;
+    }
+  }
+
+  .header-buttons {
+    flex-direction: row-reverse;
+
+    .login-button,
+    .sign-up-button {
+      padding: 10px 20px;
+    }
+
+    .login-button {
+      margin-right: 10px;
+
+      .d-icon {
+        display: none;
+      }
+    }
+
+    .sign-up-button {
+      background-color: $primary;
+      color: $secondary;
+    }
   }
 }
 
