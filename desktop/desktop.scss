@@ -15,6 +15,18 @@ textarea {
 
 .d-header {
   height: 75px;
+
+  .custom-header-links {
+    margin-left: 3em;
+  }
+
+  .header-buttons {
+    .login-button,
+    .sign-up-button {
+      padding: 10px 20px;
+    }
+  }
+
   button {
     &.login-button,
     &.sign-up-button {
@@ -70,7 +82,7 @@ ol.category-breadcrumb {
   font-size: 1.1em;
 }
 
-.admin-controls .nav-pills>li a.active {
+.admin-controls .nav-pills > li a.active {
   color: $secondary;
 }
 

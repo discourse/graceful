@@ -1,6 +1,16 @@
 @import "common/foundation/variables";
-
 .d-header {
+  .custom-header-links {
+    display: none;
+  }
+
+  .header-buttons {
+    .login-button,
+    .sign-up-button {
+      padding: 10px;
+    }
+  }
+
   .login-button,
   .d-header button.sign-up-button {
     margin: 0 5px 0;
