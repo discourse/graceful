@@ -1,13 +1,4 @@
 <script type="text/discourse-plugin" version="0.8">
   api.replaceIcon('search', 'communitarian_search');
   api.replaceIcon('bars', 'communitarian_bars');
-
-  api.onPageChange((url) => {
-    $headerCustomLinks = $('.d-header .custom-header-links');
-    if (url === '/categories') {
-      $headerCustomLinks.hide()
-    } else {
-      $headerCustomLinks.show();
-    }
-  });
 </script>
