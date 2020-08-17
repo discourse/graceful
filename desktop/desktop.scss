@@ -166,33 +166,17 @@ nav.post-controls {
 }
 
 .modal-inner-container {
+  max-width: 800px;
   border-radius: 4px;
 }
 
 .modal-header {
-  padding: 5px 30px;
-  text-align: center;
-  position: relative;
+  padding: 17px 30px;
+
   .modal-close {
-    position: absolute;
-    right: 0;
+    align-self: auto;
+    font-size: 1.7em;
   }
-  .title {
-    margin: 20px auto;
-    max-width: 300px;
-  }
-}
-
-.modal-header .close {
-  margin: 15px;
-}
-
-.modal .modal-body {
-  padding: 25px 30px;
-}
-
-.modal-footer {
-  padding: 20px 30px;
 }
 
 .modal-tab {
