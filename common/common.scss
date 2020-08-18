@@ -13,10 +13,7 @@
   height: 100vh;
   width: 100vw;
   z-index: -1;
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--primary-low, $primary-low);
-  }
-  background-color: var(--primary-very-low, $primary-very-low);
+  background-color: var(--gf-primary-very-low-or-primary-low);
   @if $no-background-image == "false" {
     @if $background-image != "default" {
       // Thanks @tmoko!
@@ -69,10 +66,7 @@ tbody {
 
 .btn,
 .select-kit.dropdown-select-box .dropdown-select-box-header {
-  @media (prefers-color-scheme: dark) {
-    border-color: var(--primary-low-mid, $primary-low-mid);
-  }
-  border: 1px solid var(--primary-low, $primary-low);
+  border: 1px solid var(--gf-primary-low-or-low-mid);
   color: var(--primary-high, $primary-high);
   background: transparent;
   border-radius: 4px;
@@ -118,15 +112,10 @@ tbody {
 }
 
 .open .grippie {
-  @media (prefers-color-scheme: dark) {
-    background: var(--secondary-very-high, $secondary-very-high);
-  }
-  background: transparent;
+  border-radius: 10px 10px 0 0;
+  opacity: 0.4;
   &:before {
-    @media (prefers-color-scheme: dark) {
-      border-color: var(--primary-low-mid, $primary-low-mid);
-    }
-    border-color: var(--primary-low, $primary-low);
+    border-color: var(--gf-primary-low-or-low-mid);
   }
 }
 

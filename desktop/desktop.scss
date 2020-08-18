@@ -19,10 +19,7 @@ img.avatar {
 
 .d-header {
   height: 70px;
-  @media (prefers-color-scheme: dark) {
-    background: var(--secondary-very-high, $secondary-very-high);
-  }
-  background: rgba(var(--header_background-rgb, $header_background), 0.92);
+  background: rgba(var(--gf-header-bg-rgb), 0.92);
   box-shadow: 0 3px 3px rgba(100, 100, 100, 0.13);
   .panel {
     padding: 6px 0 0 0;
