@@ -13,7 +13,10 @@
   height: 100vh;
   width: 100vw;
   z-index: -1;
-  background-color: var(--gf-primary-very-low-or-primary-low);
+  background-color: var(
+    --gf-primary-very-low-or-primary-low,
+    $primary-very-low
+  );
   @if $no-background-image == "false" {
     @if $background-image != "default" {
       // Thanks @tmoko!
@@ -66,7 +69,7 @@ tbody {
 
 .btn,
 .select-kit.dropdown-select-box .dropdown-select-box-header {
-  border: 1px solid var(--gf-primary-low-or-low-mid);
+  border: 1px solid var(--gf-primary-low-or-low-mid, $primary-low);
   color: var(--primary-high, $primary-high);
   background: transparent;
   border-radius: 4px;
@@ -115,7 +118,7 @@ tbody {
   border-radius: 10px 10px 0 0;
   opacity: 0.4;
   &:before {
-    border-color: var(--gf-primary-low-or-low-mid);
+    border-color: var(--gf-primary-low-or-low-mid, $primary-low);
   }
 }
 
