@@ -1,0 +1,13 @@
+$gf-header-bg: dark-light-choose($header_background, $secondary-very-high);
+
+:root {
+  --gf-primary-very-low-or-primary-low: #{dark-light-choose(
+      $primary-very-low,
+      $primary-low
+    )};
+  --gf-header-bg-rgb: #{hexToRGB($gf-header-bg)};
+  --gf-primary-low-or-low-mid: #{dark-light-choose(
+      $primary-low,
+      $primary-low-mid
+    )};
+}

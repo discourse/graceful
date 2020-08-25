@@ -17,6 +17,18 @@
       "danger": "f8745c",
       "success": "41e254",
       "love": "fa6c8d"
+    },
+    "Graceful Dark": {
+      "primary": "c4cfc5",
+      "secondary": "445446",
+      "tertiary": "88af8e",
+      "quaternary": "88af8e",
+      "header_background": "212821",
+      "header_primary": "ffffff",
+      "highlight": "7e9280",
+      "danger": "f8745c",
+      "success": "41e254",
+      "love": "fa6c8d"
     }
   }
 }
