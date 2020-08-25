@@ -3,7 +3,7 @@
   "about_url": "https://meta.discourse.org/t/a-graceful-theme-for-discourse/93040/1",
   "license_url": "https://meta.discourse.org/t/a-graceful-theme-for-discourse/93040/1",
   "assets": {
-    "default-background": "assets/sayagata-400px-transparent.png"
+    "default-background": "assets/sayagata-400px.png"
   },
   "color_schemes": {
     "Graceful": {
