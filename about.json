@@ -5,6 +5,7 @@
   "assets": {
     "avenir-heavy": "assets/avenir-heavy.woff2",
     "avenir-medium": "assets/avenir-medium.woff2",
+    "avenir-light": "assets/avenir-light.woff2",
     "icons-sprite": "assets/communitarian-icons.svg"
   },
   "color_schemes": {

@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family: "Avenir Light";
+  src: url($avenir-light) format("woff2");
+}
+
+@font-face {
   font-family: "Avenir Medium";
   src: url($avenir-medium) format("woff2");
 }
