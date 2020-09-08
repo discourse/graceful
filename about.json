@@ -1,7 +1,7 @@
 {
-  "name": "graceful",
-  "about_url": "https://meta.discourse.org/t/a-graceful-theme-for-discourse/93040/1",
-  "license_url": "https://meta.discourse.org/t/a-graceful-theme-for-discourse/93040/1",
+  "name": "Civil Dialogues",
+  "about_url": "https://github.com/fs/civil-dialogues-theme",
+  "license_url": "https://github.com/fs/civil-dialogues-theme",
   "assets": {
     "avenir-heavy": "assets/avenir-heavy.woff2",
     "avenir-medium": "assets/avenir-medium.woff2",
@@ -9,7 +9,7 @@
     "icons-sprite": "assets/communitarian-icons.svg"
   },
   "color_schemes": {
-    "Graceful": {
+    "CivilDialogues": {
       "primary": "222222",
       "secondary": "ffffff",
       "tertiary": "329BF7",
