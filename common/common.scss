@@ -40,12 +40,9 @@ tbody {
   border-width: 1px;
 }
 
-#main {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 #main-outlet {
+  margin-top: 30px;
+  margin-bottom: 50px;
   background: rgba($secondary, 0.95);
   border-radius: 8px;
   width: 75%;
@@ -145,7 +142,6 @@ tbody {
 }
 
 header.d-header {
-  position: fixed;
   @include box-shadow;
   .contents {
     display: flex;
