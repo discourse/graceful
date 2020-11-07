@@ -13,6 +13,11 @@ body {
   width: 80%;
 }
 
+.container.posts > .row {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .d-header {
   .contents {
     margin: 2px 0;
