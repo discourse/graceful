@@ -96,6 +96,10 @@ tbody {
   border-color: $tertiary;
 }
 
+.btn-flat.close {
+  border: none;
+}
+
 .popup-menu-btn,
 .popup-menu-btn-danger,
 .modal-close {
@@ -274,6 +278,12 @@ header.d-header {
 
 // admin
 
+.post-admin-menu {
+  .popup-menu-button {
+    border: none;
+  }
+}
+
 .admin-controls {
   background: $tertiary-low;
   .controls {
@@ -352,6 +362,11 @@ span.user-title {
   &.is-highlighted {
     background: $tertiary;
   }
+}
+
+.user-main .staff-counters > div,
+.user-main .staff-counters > div a {
+  color: var(--primary);
 }
 
 // Plugins
