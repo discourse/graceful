@@ -154,6 +154,9 @@ header.d-header {
   .panel {
     margin-left: auto;
     order: 5;
+    .rtl & {
+      margin-left: 0;
+    }
   }
 }
 
