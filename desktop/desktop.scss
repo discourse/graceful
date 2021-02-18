@@ -160,34 +160,36 @@ nav.post-controls {
   border-radius: 4px;
 }
 
-.modal-header {
-  padding: 5px 30px;
-  text-align: center;
-  position: relative;
-  .modal-close {
-    position: absolute;
-    right: 0;
+.d-modal:not(.login-modal):not(.create-account) {
+  .modal-header {
+    padding: 5px 30px;
+    text-align: center;
+    position: relative;
+    .modal-close {
+      position: absolute;
+      right: 0;
+    }
+    .title {
+      margin: 20px auto;
+      max-width: 300px;
+    }
   }
-  .title {
-    margin: 20px auto;
-    max-width: 300px;
+
+  .modal-header .close {
+    margin: 15px;
   }
-}
 
-.modal-header .close {
-  margin: 15px;
-}
+  .modal .modal-body {
+    padding: 25px 30px;
+  }
 
-.modal .modal-body {
-  padding: 25px 30px;
-}
+  .modal-footer {
+    padding: 20px 30px;
+  }
 
-.modal-footer {
-  padding: 20px 30px;
-}
-
-.modal-tab {
-  width: 90%;
+  .modal-tab {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 550px) {
@@ -206,4 +208,15 @@ nav.post-controls {
   .topic-body {
     width: 86%;
   }
+}
+
+// temp until core is fixed
+
+.d-modal.create-account .has-alt-auth .login-form::before,
+.d-modal.create-account .login-form::before {
+  display: none;
+}
+
+.d-modal.create-account .login-welcome-header {
+  height: unset;
 }
