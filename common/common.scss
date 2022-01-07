@@ -43,7 +43,7 @@ tbody {
 #main-outlet {
   margin-top: 30px;
   margin-bottom: 50px;
-  background: rgba($secondary, 0.95);
+  background: var(--secondary);
   border-radius: 8px;
   width: 75%;
   max-width: 930px;
@@ -72,8 +72,8 @@ tbody {
   border-radius: 4px;
 
   &:hover {
-    background: $tertiary-low;
-    color: $tertiary;
+    background: var(--tertiary-low);
+    color: var(--tertiary);
   }
 }
 
@@ -82,18 +82,18 @@ tbody {
 }
 
 .btn-danger {
-  background: $danger;
-  color: $secondary;
+  background: var(--danger);
+  color: var(--secondary);
   &:hover {
     background: darken($danger, 10%);
-    color: $secondary;
+    color: var(--secondary);
   }
 }
 
 .btn-primary {
-  background: $tertiary;
-  color: $secondary;
-  border-color: $tertiary;
+  background: var(--tertiary);
+  color: var(--secondary);
+  border-color: var(--tertiary);
 }
 
 .btn-flat.close {
@@ -110,10 +110,10 @@ tbody {
   border-radius: 10px 10px 0 0;
   .select-kit.dropdown-select-box .dropdown-select-box-header {
     .d-icon {
-      color: $tertiary;
+      color: var(--tertiary);
     }
     &:hover {
-      background: $tertiary-low;
+      background: var(--tertiary-low);
     }
   }
   .d-editor-button-bar {
@@ -133,14 +133,14 @@ tbody {
 
 .d-editor-button-bar .btn {
   border: none;
-  color: $tertiary;
+  color: var(--tertiary);
   .d-icon {
-    color: $tertiary;
+    color: var(--tertiary);
   }
   &:hover {
-    background: $tertiary-low;
+    background: var(--tertiary-low);
     .d-icon {
-      color: $tertiary;
+      color: var(--tertiary);
     }
   }
 }
@@ -161,9 +161,9 @@ header.d-header {
 }
 
 .d-header-icons .icon:hover {
-  background: $tertiary-low;
+  background: var(--tertiary-low);
   .d-icon {
-    color: $tertiary;
+    color: var(--tertiary);
   }
 }
 
@@ -216,17 +216,17 @@ header.d-header {
 }
 
 #topic-progress-wrapper .topic-admin-menu-button-container .toggle-admin-menu {
-  background: $secondary;
+  background: var(--secondary);
   border-radius: 4px 0 0 4px;
 }
 
 #bulk-select {
   background: transparent;
   button {
-    background: $secondary;
+    background: var(--secondary);
     @include box-shadow(2px);
     &:hover {
-      background: $tertiary-low;
+      background: var(--tertiary-low);
     }
   }
 }
@@ -236,33 +236,33 @@ header.d-header {
 .user-preferences .bio-composer .d-editor-preview,
 .group-form-bio .d-editor-preview,
 .edit-category-tab-topic-template .d-editor-preview {
-  background: $tertiary-low;
+  background: var(--tertiary-low);
 }
 
 .badge-group {
-  background: $tertiary-low;
+  background: var(--tertiary-low);
 }
 
 .input-prepend.input-append input,
 .input-prepend.input-append select {
-  background: $tertiary-low;
+  background: var(--tertiary-low);
 }
 
 .modal .modal-body {
   label .d-icon {
-    color: $tertiary;
+    color: var(--tertiary);
   }
 }
 
 .user-main {
   .staff-counters {
-    background: $tertiary-low;
-    color: $tertiary;
+    background: var(--tertiary-low);
+    color: var(--tertiary);
     a {
-      color: $tertiary;
+      color: var(--tertiary);
     }
     span {
-      color: $secondary;
+      color: var(--secondary);
     }
   }
   .helpful-flags {
@@ -287,17 +287,17 @@ header.d-header {
   }
 }
 
-.admin-controls {
-  background: $tertiary-low;
+.admin-controls { 
+  background: var(--tertiary-low);
   .controls {
-    background: $tertiary-low;
+    background: var(--tertiary-low);
   }
   nav {
-    background: $tertiary-low;
+    background: var(--tertiary-low);
     &:before {
       background: linear-gradient(
         to right,
-        $tertiary-low 0%,
+        var(--tertiary-low) 0%,
         rgba(234, 236, 238, 0) 100%
       );
     }
@@ -305,7 +305,7 @@ header.d-header {
       background: linear-gradient(
         to right,
         rgba(234, 236, 238, 0) 0%,
-        $tertiary-low 100%
+        var(--tertiary-low) 100%
       );
     }
   }
@@ -316,18 +316,18 @@ header.d-header {
 }
 
 .nav-stacked {
-  background: $tertiary-low;
+  background: var(--tertiary-low);
   li {
-    border-color: $tertiary-medium;
+    border-color: var(--tertiary-medium);
   }
 }
 
 .admin-detail {
-  border-color: $tertiary-medium;
+  border-color: var(--tertiary-medium);
 }
 
 .content-list ul li a:hover {
-  background: $tertiary-low;
+  background: var(--tertiary-low);
 }
 
 span.user-title {
@@ -341,7 +341,7 @@ span.user-title {
 }
 
 .uploaded-image-preview {
-  background: $tertiary-low;
+  background: var(--tertiary-low);
   border-radius: 4px;
 }
 
@@ -350,7 +350,7 @@ span.user-title {
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   &:hover {
     .d-icon {
-      color: $tertiary;
+      color: var(--tertiary);
     }
   }
 }
@@ -360,10 +360,10 @@ span.user-title {
 }
 
 .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row {
-  background: $tertiary-low;
+  background: var(--tertiary-low);
   &:hover,
   &.is-highlighted {
-    background: $tertiary;
+    background: var(--tertiary);
   }
 }
 
@@ -383,10 +383,10 @@ span.user-title {
   border: none;
   background: transparent;
   button.widget-button {
-    background: $secondary;
+    background: var(--secondary);
   }
   .d-icon {
-    color: $primary;
+    color: var(--primary);
   }
 }
 

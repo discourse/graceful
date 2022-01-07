@@ -58,7 +58,7 @@ img.avatar {
   margin: auto;
   .nav-pills > li {
     background: transparent;
-    border: 1px solid $primary-low;
+    border: 1px solid var(--primary-low);
     border-radius: 4px;
   }
 }
@@ -93,7 +93,7 @@ img.avatar {
     display: none;
   }
   .num a.badge-posts {
-    color: $primary-low-mid;
+    color: var(--primary-low-mid);
     font-weight: normal;
   }
   .right {
@@ -132,10 +132,10 @@ img.avatar {
 
 .user-main {
   .about.collapsed-info .details {
-    background: $secondary;
+    background: var(--secondary);
   }
   .about .details {
-    background-color: $secondary;
+    background-color: var(--secondary);
   }
 }
 
@@ -144,7 +144,7 @@ img.avatar {
 }
 
 .list-controls .combo-box .combo-box-header {
-  border: 1px solid $primary-low;
+  border: 1px solid var(--primary-low);
 }
 
 .tag-show-heading {
@@ -164,7 +164,7 @@ img.avatar {
 .mobile-view .mobile-nav {
   width: 100%;
   background: transparent;
-  border: 1px solid $primary-low;
+  border: 1px solid var(--primary-low);
   border-radius: 4px;
   .d-icon-caret-down,
   .d-icon-caret-up {
@@ -182,8 +182,8 @@ img.avatar {
 }
 
 .search-container .search-advanced-sidebar .search-advanced-title.btn {
-  background: $tertiary-low;
-  border-color: $tertiary-low;
+  background: var(--tertiary-low);
+  border-color: var(--tertiary-low);
 }
 
 div.cooked img:not(.thumbnail) {
