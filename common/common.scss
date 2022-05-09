@@ -41,8 +41,7 @@
 }
 
 #main-outlet {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin: 30px auto 50px;
   background: var(--secondary);
   border-radius: 8px;
   width: 75%;
@@ -287,7 +286,7 @@ header.d-header {
   }
 }
 
-.admin-controls { 
+.admin-controls {
   background: var(--tertiary-low);
   .controls {
     background: var(--tertiary-low);
