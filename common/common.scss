@@ -41,11 +41,12 @@
 }
 
 #main-outlet {
+  box-sizing: border-box;
   margin: 30px auto 50px;
   background: var(--secondary);
   border-radius: 8px;
-  width: 75%;
-  max-width: 930px;
+  width: 100%;
+  max-width: 980px;
   padding: 3em 3em 5%;
   .archetype-regular & {
     min-height: 500px;
@@ -55,12 +56,15 @@
   }
   padding-bottom: 5% !important; //overriding inline style
   @include box-shadow;
-  @media screen and (max-width: 1120px) {
-    width: 80%;
-  }
-  @media screen and (max-width: 1075px) {
-    width: 85%;
-  }
+}
+
+code,
+pre {
+  white-space: pre-wrap;
+}
+
+.container.posts > .row {
+  width: 100%;
 }
 
 .btn,
@@ -369,6 +373,12 @@ span.user-title {
 .user-main .staff-counters > div,
 .user-main .staff-counters > div a {
   color: var(--primary);
+}
+
+@media screen and (max-width: 790px) {
+  .topic-area > .loading-container {
+    max-width: calc(100vw - 50px);
+  }
 }
 
 // Plugins
