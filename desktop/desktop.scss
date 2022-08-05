@@ -1,4 +1,6 @@
-@import "common/foundation/variables";
+@mixin box-shadow($value: 8px) {
+  box-shadow: 0 1px $value rgba(black, 0.18);
+}
 
 h3 {
   font-weight: normal;
@@ -224,4 +226,43 @@ nav.post-controls {
     margin-left: 0;
     min-width: 80px;
   }
+}
+
+// sidebar
+
+#main-outlet-wrapper {
+  .sidebar-wrapper {
+    margin: 30px 0;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    top: calc(var(--header-offset) + 30px);
+    height: calc(100vh - (var(--header-offset) + 60px));
+    @include box-shadow;
+  }
+  .sidebar-footer-wrapper {
+    background: var(--secondary);
+  }
+}
+
+body.has-sidebar-page {
+  #main-outlet-wrapper {
+    padding-left: 8px;
+  }
+  #main-outlet {
+    max-width: unset;
+  }
+}
+
+.desktop-view .sidebar-footer-wrapper .sidebar-footer-container::before {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(var(--secondary), 1)
+  );
+}
+
+// chat
+
+body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
+  gap: 2em;
 }
