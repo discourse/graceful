@@ -15,8 +15,8 @@
     --gf-primary-very-low-or-primary-low,
     $primary-very-low
   );
-  @if $no-background-image == 'false' {
-    @if $background-image != 'default' {
+  @if $no-background-image == "false" {
+    @if $background-image != "default" {
       // Thanks @tmoko!
       background-image: url($background-image);
     } @else {
@@ -24,7 +24,7 @@
       // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/
       background-image: url($default-background);
     }
-    @if $tile-background == 'true' {
+    @if $tile-background == "true" {
       background-size: auto;
     } @else {
       background-size: cover;
@@ -379,21 +379,16 @@ span.user-title {
   }
 }
 
-// Plugins
+// new user menu
 
-// Babble
-
-.babble-sidebar {
-  height: calc(100% - 5.285em);
-}
-.babble-sidebar-collapsed {
+.user-menu.revamped .menu-tabs-container {
   border: none;
-  background: transparent;
-  button.widget-button {
-    background: var(--secondary);
+  button {
+    margin: 0 0.5em 0.5em 0;
   }
-  .d-icon {
-    color: var(--primary);
+
+  .bottom-tabs.tabs-list {
+    border-top: none;
   }
 }
 

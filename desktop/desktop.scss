@@ -261,6 +261,10 @@ body.has-sidebar-page {
   );
 }
 
+.sidebar-section-header {
+  border: none;
+}
+
 // chat
 
 body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
