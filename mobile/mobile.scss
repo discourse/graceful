@@ -189,3 +189,15 @@ img.avatar {
 div.cooked img:not(.thumbnail) {
   max-width: 100%;
 }
+
+//YW make mobile title 2 lines
+.title-wrapper a {
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
