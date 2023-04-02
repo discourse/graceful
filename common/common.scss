@@ -397,10 +397,3 @@ span.user-title {
 noscript > #main-outlet {
   padding-top: 6em;
 }
-
-.topic-list .main-link .title {
-  max-width: 250px; /* You can change this value according to your needs */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
