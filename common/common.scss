@@ -379,13 +379,6 @@ span.user-title {
   }
 }
 
-//LW make logo dispear 
-@media (max-width: 767px) {
-  .category-logo.aspect-image {
-    display: none;
-  }
-}
-
 // new user menu
 
 .user-menu.revamped .menu-tabs-container {
@@ -406,7 +399,7 @@ noscript > #main-outlet {
 }
 
 .topic-list .main-link .title {
-  max-width: 250px; /* You can change this value according to your needs */
+  max-width: 100px; /* You can change this value according to your needs */
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
