@@ -410,10 +410,7 @@ noscript > #main-outlet {
   text-overflow: ellipsis;
 }
 
-//YW add  the css below to make logo disappear on mobile
-
-@media (max-width: 767px) {
-  .category-logo.aspect-image {
-	display: none;
-  }
+// make category logo disappear on all devices
+.category-logo.aspect-image {
+  display: none;
 }
