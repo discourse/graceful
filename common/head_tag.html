@@ -1,0 +1,17 @@
+<script type="text/discourse-plugin" version="0.8">
+  $( document ).ready(function() {
+    api.onPageChange((url, title) =>{
+      const targetComponent = this.querySelector('.banner-ad')
+      const router = api.container.lookup('service:router');
+      if ( router.currentRoute.name.includes('chat') ) {
+          if (targetComponent) {
+              $(targetComponent).addClass('hide');
+          }
+      } else {
+        if (targetComponent) {
+            $(targetComponent).removeClass('hide');
+        }
+      }
+    })
+  })
+</script>
