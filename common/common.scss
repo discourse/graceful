@@ -1,5 +1,9 @@
 // Big thanks to jsthon for the initial work on this https://meta.discourse.org/u/jsthon/
 
+:root {
+  --d-hover: var(--tertiary-low);
+}
+
 @mixin box-shadow($value: 8px) {
   box-shadow: 0 1px $value rgba(black, 0.18);
 }
@@ -52,7 +56,6 @@
   @media screen and (max-width: 775px) {
     padding: 1.5em;
   }
-  padding-bottom: 5% !important; //overriding inline style
   @include box-shadow;
 }
 
@@ -65,24 +68,35 @@ pre {
   width: 100%;
 }
 
-.btn,
+.btn:not(.btn-flat),
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   border: 1px solid var(--gf-primary-low-or-low-mid, $primary-low);
   color: var(--primary-high, $primary-high);
   background: transparent;
   border-radius: 4px;
-
-  &:hover {
-    background: var(--tertiary-low);
-    color: var(--tertiary);
+  .d-icon {
+    color: currentColor;
   }
+  .discourse-no-touch & {
+    &:hover {
+      background: var(--tertiary-low);
+      color: var(--tertiary);
+      .d-icon {
+        color: currentColor;
+      }
+    }
+  }
+}
+
+.btn[class*="popup-menu-btn"] {
+  border: none;
 }
 
 .btn.btn-social {
   color: var(--secondary);
 }
 
-.btn-danger {
+.btn.btn-danger:not(.btn-flat) {
   background: var(--danger);
   color: var(--secondary);
   &:hover {
@@ -91,20 +105,10 @@ pre {
   }
 }
 
-.btn-primary {
+.btn.btn-primary {
   background: var(--tertiary);
   color: var(--secondary);
   border-color: var(--tertiary);
-}
-
-.btn-flat.close {
-  border: none;
-}
-
-.popup-menu-btn,
-.popup-menu-btn-danger,
-.modal-close {
-  border: none;
 }
 
 #reply-control {
@@ -361,10 +365,9 @@ span.user-title {
 }
 
 .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row {
-  background: var(--tertiary-low);
   &:hover,
   &.is-highlighted {
-    background: var(--tertiary);
+    background: var(--tertiary-low);
   }
 }
 
@@ -396,4 +399,22 @@ span.user-title {
 .crawler > #main-outlet,
 noscript > #main-outlet {
   padding-top: 6em;
+}
+
+// chat
+
+.chat-composer__wrapper {
+  background: transparent;
+}
+
+body.has-full-page-chat {
+  #main-outlet {
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
+.chat-channel {
+  height: calc(100vh - (var(--header-offset) + 60px));
 }

@@ -16,7 +16,8 @@
       "highlight": "d4efd8",
       "danger": "f8745c",
       "success": "41e254",
-      "love": "fa6c8d"
+      "love": "fa6c8d",
+      "selected": "edf3ee"
     },
     "Graceful Dark": {
       "primary": "c4cfc5",
@@ -28,7 +29,8 @@
       "highlight": "7e9280",
       "danger": "f8745c",
       "success": "41e254",
-      "love": "fa6c8d"
+      "love": "fa6c8d",
+      "selected": "2c412f"
     }
   }
 }
