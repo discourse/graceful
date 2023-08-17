@@ -9,8 +9,8 @@ body {
 }
 
 #main-outlet {
-  padding: 15px;
-  width: 90%;
+  padding: 10px;
+  width: 96%;
 }
 
 .container.posts > .row {
@@ -188,4 +188,20 @@ img.avatar {
 
 div.cooked img:not(.thumbnail) {
   max-width: 100%;
+}
+
+// chat
+
+.has-full-page-chat {
+  #main {
+    padding: 0;
+  }
+}
+
+.full-page-chat .chat-full-page-header__back-btn {
+  justify-content: start;
+}
+
+.chat-channel {
+  height: calc(100dvh - (var(--header-offset) + 60px));
 }
