@@ -9,6 +9,7 @@ body {
 }
 
 #main-outlet {
+  margin: 1em auto;
   padding: 10px;
   width: 96%;
 }
@@ -203,5 +204,9 @@ div.cooked img:not(.thumbnail) {
 }
 
 .chat-channel {
-  height: calc(100dvh - (var(--header-offset) + 60px));
+  height: calc(100vh - (var(--header-offset) + 11em));
+}
+
+.chat-scroll-to-bottom__arrow {
+  width: 33px; // minor centering adjustment on iOS
 }
