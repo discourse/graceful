@@ -268,11 +268,11 @@ nav.post-controls {
 }
 
 #main-outlet-wrapper {
+  margin-top: 2em;
   .sidebar-wrapper {
-    margin: 30px 0;
     background-color: var(--secondary);
     border-radius: 8px;
-    top: calc(var(--header-offset) + 30px);
+    top: calc(var(--header-offset) + 2em);
     height: calc(100vh - (var(--header-offset) + 60px));
     @include box-shadow;
   }

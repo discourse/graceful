@@ -44,7 +44,7 @@
 
 #main-outlet {
   box-sizing: border-box;
-  margin: 30px auto;
+  margin: 0 auto;
   background: var(--secondary);
   border-radius: 8px;
   width: 100%;
@@ -415,6 +415,10 @@ body.has-full-page-chat {
   }
 }
 
+.full-page-chat .c-navbar-container {
+  top: unset;
+}
+
 .chat-channel {
-  height: calc(100vh - (var(--header-offset) + 60px));
+  height: calc(100vh - (var(--header-offset) + 8em));
 }
