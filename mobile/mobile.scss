@@ -187,8 +187,13 @@ img.avatar {
   border-color: var(--tertiary-low);
 }
 
-div.cooked img:not(.thumbnail) {
-  max-width: 100%;
+div.cooked {
+  img:not(.thumbnail) {
+    max-width: 100%;
+  }
+  td img:not(.thumbnail) {
+    max-width: unset; // max-width distorts table images
+  }
 }
 
 // chat
