@@ -303,7 +303,7 @@ body.has-sidebar-page {
 }
 
 .sidebar-section-header {
-  border: none;
+  border: none !important; // button rule upstream is very specific
 }
 
 // chat

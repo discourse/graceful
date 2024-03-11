@@ -68,7 +68,7 @@ pre {
   width: 100%;
 }
 
-.btn:not(.btn-flat):not(.btn-social),
+.btn:not(.btn-flat):not(.btn-social):not(.btn-transparent),
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   border: 1px solid var(--gf-primary-low-or-low-mid, $primary-low);
   color: var(--primary-high, $primary-high);
@@ -90,10 +90,6 @@ pre {
 
 .btn[class*="popup-menu-btn"] {
   border-color: transparent;
-}
-
-.btn.btn-social {
-  color: var(--secondary);
 }
 
 .btn.btn-danger:not(.btn-flat) {
