@@ -32,5 +32,6 @@
       "love": "fa6c8d",
       "selected": "2c412f"
     }
-  }
+  },
+  "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
 }
