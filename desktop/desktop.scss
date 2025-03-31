@@ -23,22 +23,27 @@ img.avatar {
   height: 70px;
   background: rgba(var(--gf-header-bg-rgb), 0.92);
   box-shadow: 0 3px 3px rgba(100, 100, 100, 0.13);
+
   .panel {
     padding: 6px 0 0 0;
     flex: 0 0 auto;
   }
+
   button {
     &.login-button,
     &.sign-up-button {
       font-size: 1em;
     }
   }
+
   .icons .icon {
+    border-radius: 4px;
+
     @media screen and (min-width: 875px) {
       margin-left: 20px;
     }
-    border-radius: 4px;
   }
+
   .icons {
     .unread-private-messages,
     .badge-notification,
@@ -48,9 +53,11 @@ img.avatar {
       background: var(--tertiary);
     }
   }
+
   .icons .flagged-posts {
     right: 85px;
   }
+
   #site-logo {
     max-height: 35px !important;
   }
@@ -66,6 +73,7 @@ img.avatar {
 
 .topic-post > article > .row {
   display: flex;
+
   .topic-avatar {
     align-self: flex-start;
   }
@@ -90,9 +98,11 @@ img.avatar {
 .names .username {
   font-size: 1.1em;
 }
+
 .nav-pills > li > a {
   border-radius: 4px;
 }
+
 .nav-pills > li.active > a,
 .nav-pills > li > a.active {
   color: var(--tertiary);
@@ -103,14 +113,17 @@ nav.post-controls {
   button,
   .double-button {
     border-radius: 4px;
+
     button.toggle-like.like {
       border-radius: 4px !important;
     }
+
     &:hover {
       button {
         &:first-of-type {
           border-radius: 4px 0 0 4px;
         }
+
         &:last-of-type {
           border-radius: 0 4px 4px 0;
         }
@@ -119,6 +132,7 @@ nav.post-controls {
       }
     }
   }
+
   button:focus,
   button.d-hover {
     background: var(--tertiary-low);
@@ -130,6 +144,7 @@ nav.post-controls {
   .num a.badge-posts {
     font-weight: normal;
   }
+
   .sortable:hover {
     // sortable column headers
     border-radius: 4px 4px 0 0;
@@ -168,9 +183,11 @@ nav.post-controls {
 
 .timeline-container .topic-timeline {
   margin-top: 20px;
+
   .timeline-scrollarea {
     border-color: var(--primary-low);
   }
+
   .timeline-handle {
     background: var(--tertiary);
   }
@@ -188,10 +205,12 @@ nav.post-controls {
 .modal-header {
   flex-wrap: wrap;
   position: relative;
+
   .modal-close {
     position: absolute;
     right: 0;
   }
+
   .title {
     margin: 1em auto;
   }
@@ -250,6 +269,7 @@ nav.post-controls {
 
 .container.posts .topic-navigation {
   min-width: 100px;
+
   @media screen and (max-width: 960px) {
     margin-left: 0;
     min-width: 80px;
@@ -257,7 +277,6 @@ nav.post-controls {
 }
 
 // sidebar
-
 :root {
   --d-sidebar-prefix-background: var(--tertiary-low);
   --d-sidebar-highlight-background: var(--tertiary-low);
@@ -269,13 +288,16 @@ nav.post-controls {
 
 #main-outlet-wrapper {
   margin-top: 2em;
+
   .sidebar-wrapper {
     background-color: var(--secondary);
     border-radius: 8px;
     top: calc(var(--header-offset) + 2em);
     height: calc(100vh - (var(--header-offset) + 60px));
+
     @include box-shadow;
   }
+
   .sidebar-footer-wrapper {
     background: var(--secondary);
   }
@@ -289,6 +311,7 @@ body.has-sidebar-page {
   #main-outlet-wrapper {
     padding-left: 8px;
   }
+
   #main-outlet {
     max-width: unset;
   }
@@ -307,7 +330,6 @@ body.has-sidebar-page {
 }
 
 // chat
-
 body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
   gap: 2em;
 }
