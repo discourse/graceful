@@ -1,5 +1,5 @@
 @mixin box-shadow($value: 8px) {
-  box-shadow: 0 1px $value rgba(black, 0.18);
+  box-shadow: 0 1px $value rgb(black, 0.18);
 }
 
 h3 {
@@ -21,8 +21,8 @@ img.avatar {
 
 .d-header {
   height: 70px;
-  background: rgba(var(--gf-header-bg-rgb), 0.92);
-  box-shadow: 0 3px 3px rgba(100, 100, 100, 0.13);
+  background: rgb(var(--gf-header-bg-rgb), 0.92);
+  box-shadow: 0 3px 3px rgb(100, 100, 100, 0.13);
 
   .panel {
     padding: 6px 0 0 0;
@@ -39,7 +39,7 @@ img.avatar {
   .icons .icon {
     border-radius: 4px;
 
-    @media screen and (min-width: 875px) {
+    @media screen and (width >= 875px) {
       margin-left: 20px;
     }
   }
@@ -247,20 +247,20 @@ nav.post-controls {
   width: 90%;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (width >= 550px) {
   .modal.edit-category-modal .modal-inner-container {
     min-width: 550px;
   }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (width <= 890px) {
   .topic-body,
   .small-action {
     width: 89%;
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (width <= 980px) {
   .topic-body,
   .small-action {
     width: 86%;
@@ -270,7 +270,7 @@ nav.post-controls {
 .container.posts .topic-navigation {
   min-width: 100px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (width <= 960px) {
     margin-left: 0;
     min-width: 80px;
   }
@@ -321,7 +321,7 @@ body.has-sidebar-page {
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(var(--secondary), 1)
+    rgb(var(--secondary), 1)
   );
 }
 
