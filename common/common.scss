@@ -1,9 +1,6 @@
 @use "sass:color";
 
 // Big thanks to jsthon for the initial work on this https://meta.discourse.org/u/jsthon/
-:root {
-  --d-hover: var(--tertiary-low);
-}
 
 @mixin box-shadow($value: 8px) {
   box-shadow: 0 1px $value rgb(black, 0.18);
@@ -81,6 +78,8 @@ pre {
 }
 
 :root {
+  --d-hover: var(--tertiary-low);
+
   // .btn-default
   --d-button-default-text-color: var(--primary);
   --d-button-default-text-color--hover: var(--tertiary);
