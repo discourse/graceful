@@ -1,4 +1,8 @@
 $gf-header-bg: dark-light-choose($header_background, $secondary-very-high);
+$default-background-dynamic: dark-light-choose(
+  $default-background-light,
+  $default-background-dark
+);
 
 :root {
   --gf-primary-very-low-or-primary-low: #{dark-light-choose(
@@ -10,4 +14,5 @@ $gf-header-bg: dark-light-choose($header_background, $secondary-very-high);
       $primary-low,
       $primary-low-mid
     )};
+  --default-background-dynamic: url(#{$default-background-dynamic});
 }

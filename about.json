@@ -3,7 +3,8 @@
   "about_url": "https://meta.discourse.org/t/a-graceful-theme-for-discourse/93040",
   "license_url": "https://github.com/discourse/graceful/blob/main/LICENSE",
   "assets": {
-    "default-background": "assets/sayagata-400px.png"
+    "default-background-light": "assets/asanoha-400px.png",
+    "default-background-dark": "assets/asanoha-400px-dark.png"
   },
   "color_schemes": {
     "Graceful": {
